@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="START_HW20_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgz-cb-WLY">
+                                <rect key="frame" x="148" y="599.33333333333337" width="94.333333333333314" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET OPT"/>
+                                <connections>
+                                    <action selector="getOPT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jIs-Zy-Vif"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cad-sw-PdB">
+                                <rect key="frame" x="109.33333333333333" y="673.66666666666663" width="171.66666666666669" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET BLACK LOTUS"/>
+                                <connections>
+                                    <action selector="getBlackLotus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTi-Wn-SKa"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4U5-mq-375">
+                                <rect key="frame" x="116" y="165" width="158" height="126.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgg-gz-GQM">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkM-cJ-3Wg">
+                                        <rect key="frame" x="0.0" y="35.333333333333343" width="29" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мановая стоимость" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-bt-hMv">
+                                        <rect key="frame" x="0.0" y="70.666666666666657" width="158" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название сета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yM4-9A-o8O">
+                                        <rect key="frame" x="0.0" y="106" width="116.66666666666667" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kqf-WU-hpl">
+                                <rect key="frame" x="176.66666666666666" y="410" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kD-rz-JFp">
+                                <rect key="frame" x="157.66666666666666" y="455" width="74.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kqf-WU-hpl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Dbr-Dw-gFM"/>
+                            <constraint firstItem="Cad-sw-PdB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Dwz-na-46Z"/>
+                            <constraint firstItem="5kD-rz-JFp" firstAttribute="top" secondItem="kqf-WU-hpl" secondAttribute="bottom" constant="8" symbolic="YES" id="JM6-iD-b3O"/>
+                            <constraint firstItem="kgz-cb-WLY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NTg-hc-AsI"/>
+                            <constraint firstItem="4U5-mq-375" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="ZSh-ax-Hlt"/>
+                            <constraint firstItem="kqf-WU-hpl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iBO-7t-dhI"/>
+                            <constraint firstItem="5kD-rz-JFp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jVV-uy-VNh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cad-sw-PdB" secondAttribute="bottom" constant="102" id="jqu-6Z-GBg"/>
+                            <constraint firstItem="Cad-sw-PdB" firstAttribute="top" secondItem="kgz-cb-WLY" secondAttribute="bottom" constant="40" id="kHP-O8-d70"/>
+                            <constraint firstItem="4U5-mq-375" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v5o-sU-77S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="kqf-WU-hpl" id="ucc-Q4-ynY"/>
+                        <outlet property="cardManaCost" destination="Eit-bt-hMv" id="8Jl-gb-ngJ"/>
+                        <outlet property="cardName" destination="xgg-gz-GQM" id="KBu-qa-zhG"/>
+                        <outlet property="cardSetName" destination="yM4-9A-o8O" id="nFs-w9-IUw"/>
+                        <outlet property="cardType" destination="mkM-cJ-3Wg" id="ZoD-4x-sK7"/>
+                        <outlet property="loadingLabel" destination="5kD-rz-JFp" id="8pX-mP-QcJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
