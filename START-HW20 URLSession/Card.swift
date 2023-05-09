@@ -8,12 +8,12 @@
 import Foundation
 
 //MARK: - Card
-struct Card: Codable {
+class Card: Codable {
     let cards: [CardElement]
 }
 
 // MARK: - CardElement
-struct CardElement: Codable {
+class CardElement: Codable {
     let name: String
     let manaCost: String
     let cmc: Int
